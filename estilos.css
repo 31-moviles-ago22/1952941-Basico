@@ -1,0 +1,68 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: #232f3e;
+    padding: 15px;
+}
+
+header h1{
+    color:white;
+}
+
+footer{
+    padding: 15px;
+    background-color: #131921;
+    color: white;
+ 
+}
+
+
+main{
+    margin: 0 5%;
+    width: 90%;
+}
+
+main #contenedor{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main .tarjeta-25{
+    display: inline-block;
+    max-width: 20%;
+    margin: 0 2%;
+    padding: 30px
+    background-color: white;
+}
+
+main .tarjeta-25 img{
+    width: 100%;
+}
+
+
+main #login{
+    background-color: #fbd934;
+    border: none;
+    padding: 10px;
+}
+
+/*footer*/
+
+
+
+footer .links{
+    list-style: none;
+    display: inline-block;
+    max-width: 20%;
+    margin: 0 2%;
+    padding: 30px
+    background-color: white;
+}
