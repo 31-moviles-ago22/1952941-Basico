@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primer proyecto</title>
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-    <link rel="stylesheet" href="estilos.css">    
-
+    <title>Mi tienda en linea</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
     <header>
         <h1>Encabezado</h1>
+        <span id="carrito"></span>
     </header>
 
     <section id="banner">
         <button onclick="inyectarHola()">click aqui para inyectar</button>
     </section>
 
+    <section id="carrocompras">
+        
+    </section>
     <main class="principal">
         <p></p>
         <div id="contenedor">
-            <div class="tarjeta-25">
-                <h3>Inicia Sesion</h3>
-                <button id="login"><a href="sesion.html">Inicia sesion de forma segura</a></button>
+            <div class="tarjeta">
+                <p>iphone</p>
+                 <img src="Imagenes/" alt="" width="80%">
+                 <button onclick="agregaralCarrito()">Agregar al carrito</button>
                 
              </div>
-             <div class="tarjeta-25">
-                 <h3>Computadoras y Accesorios</h3>
-                 <img src="Imagenes/computadora2.jpg" alt="">
-                 <a href="">Comprar ahora</a>
+             <div class="tarjeta">
+                <p>nokia</p>
+                 <img src="Imagenes/" alt="" width="80%">
+                 <button>Agregar al carrito</button>
              </div>
-             <div class="tarjeta-25">
-                 <h3>Vestidos</h3>
-                 <img src="Imagenes/vestido.jpg" alt="">
-                 <a href="">Comprar ahora</a>
+             <div class="tarjeta">
+                <p>realme</p>
+                <img src="Imagenes/" alt="">
+                <button>Agregar al carrito</button>
              </div>
-             <div class="tarjeta-25">
-                 <h3>Amazon Basics</h3>
-                 <img src="Imagenes/computadora.jpg" alt="">
-                 <a href="">Ver mas</a>
+             <div class="tarjeta">
+                <p>samsung</p>
+                <img src="Imagenes/" alt="">
+                <button>Agregar al carrito</button>
              </div>
         </div>
 
