@@ -1,22 +1,20 @@
 var usuarioTXT = document.getElementById("usuario");
-var usuarioVALUE = usuarioTXT.value;
-
 var passwordTXT = document.getElementById("password");
-var passwordVALUE = passwordTXT.value;
+
 var contadorintentos=3;
 const passwordCORRECTO = "contrasena1234"
 
 var botonLoginTXT = document.getElementById("botonlogin");
-var botonLoginVALUE = botonLoginTXT.value;
+
 
 function InicioSesion(){
-    usuarioVALUE=usuarioTXT.value;
-    passwordVALUE=passwordTXT.value;
+    console.log(usuarioTXT.value);
+    console.log(passwordTXT.value);
 
     var passwordVALUE=password.value;
 
     if(passwordVALUE == passwordCORRECTO){
-        window.location.assign("\Index.html");
+        window.location.assign("/Index.html");
     }else{
         contadorintentos--;
         var mensajeINCORRECTO = document.createElement("p")
@@ -33,16 +31,18 @@ function InicioSesion(){
         
 
         var logincontainer=document
-        }
+    }
 
-    var nuevoelemento=document.createElement("ion-item");
-    nuevoelemento.innerHTML=usuarioVALUE+" "+passwordVALUE;
-
-    usuarioTXT.value="";
-    passwordTXT.value="";
+    
 
 }
 
-function InicioSesion(){
 
+function escribiendousuario(){
+    console.log("Usuario: "+usuarioTXT.value);
 }
+
+function escribiendopassword(){
+    console.log("Password: "+passwordTXT.value);
+}
+

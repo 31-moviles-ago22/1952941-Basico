@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer proyecto</title>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    
 
 
     <link rel="stylesheet" href="estilos.css">
@@ -29,16 +27,21 @@
               <ion-label>Usuario:</ion-label>
             </p>
 
-          <ion-input id="usuario" placeholder="usuario@gmail.com"></ion-input> 
+          <br>
+          <input type="text" id="usuario" oninput="escribiendousuario()">
+          <br><br>
 
           <p>
             <ion-label>Password:</ion-label>
           </p>
-          <ion-input id="password" type="number" placeholder="..." ></ion-input> 
+          <br>
+          <input type="text" id="password" oninput="escribiendopassword()">
+          <br><br>
 
           <ion-button id="botonlogin" onclick="InicioSesion()">Iniciar sesion</ion-button>
 
-          
+          <a href="">Ay! olvide mi password</a><br><br>
+          <a href="">Registrarme</a>          
 
           </ion-content>
     </ionic-app>

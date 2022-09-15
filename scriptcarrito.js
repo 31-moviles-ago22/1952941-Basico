@@ -9,15 +9,15 @@ function agregaralCarrito(imagenSrc){
     var imagen=document.createElement("img");
     imagen.src="RUTADELAIMAGEN";
 
-    var link=document.createElement("a");
-    link.onclick="eliminar()";
-    botonLoginTXT.addEventListener("click",function()){
-
-    }
-    link.href="";
+    var boton=document.createElement("button");
+    //boton.onclick="eliminar()";
+    boton.addEventListener("click",function(){
+        eliminar();
+    })
+    boton.innerHTML="Eliminar";
 
     articulo.appendChild(imagen);
-    articulo.appendChild(link);
+    articulo.appendChild(boton);
 
     //inyecta articulo
     contenedorcarrito.appendChild(articulo);
@@ -26,4 +26,7 @@ function agregaralCarrito(imagenSrc){
 
 function eliminar(){
     carrito--;
+    carritospan.innerHTML=carrito;
+
+    
 }
