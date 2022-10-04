@@ -129,6 +129,9 @@ footer .links{
     
 }
 
-header span{
-    
+
+section div{
+    display: inline-block;
+    padding: 20px;
 }
+

@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Encabezado</h1>
-        <span id="carrito"></span>
+        <span id="carrito">Articulos: 0</span>
     </header>
 
     <section id="banner">
@@ -25,24 +25,24 @@
         <div id="contenedor">
             <div class="tarjeta">
                 <p>iphone</p>
-                 <img src="Imagenes/" alt="" width="80%">
-                 <button onclick="agregaralCarrito()">Agregar al carrito</button>
+                 <img src="Imagenes/iphone.jpg" alt="" width="80%">
+                 <button onclick="agregaralCarrito('imagenes/iphone.jpg', 'iphone')">Agregar al carrito</button>
                 
              </div>
              <div class="tarjeta">
                 <p>nokia</p>
-                 <img src="Imagenes/" alt="" width="80%">
-                 <button>Agregar al carrito</button>
+                 <img src="Imagenes/nokia.jpg" alt="" width="80%">
+                 <button onclick="agregaralCarrito('imagenes/nokia.jpg', 'Nokia')">Agregar al carrito</button>
              </div>
              <div class="tarjeta">
                 <p>realme</p>
-                <img src="Imagenes/" alt="">
-                <button>Agregar al carrito</button>
+                <img src="Imagenes/realme.jpg" alt="">
+                <button onclick="agregaralCarrito('imagenes/realme.jpg', 'realme')">Agregar al carrito</button>
              </div>
              <div class="tarjeta">
                 <p>samsung</p>
-                <img src="Imagenes/" alt="">
-                <button>Agregar al carrito</button>
+                <img src="Imagenes/samsung.jpg" alt="">
+                <button onclick="agregaralCarrito('imagenes/samsung.jpg', 'samsung')">Agregar al carrito</button>
              </div>
         </div>
 
@@ -68,5 +68,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="scriptLogin.js"></script>
+    <script src="scriptcarrito.js"></script>
 </body>
 </html>
